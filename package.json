@@ -13,6 +13,7 @@
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "babel-plugin-emotion": "^11.0.0",
+    "date-fns": "^2.16.1",
     "firebase": "^8.2.3",
     "firebase-admin": "^9.4.2",
     "next": "10.0.5",
