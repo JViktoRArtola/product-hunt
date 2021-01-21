@@ -3,6 +3,7 @@ import Link from "next/link";
 import styled from "@emotion/styled";
 import {css} from "@emotion/react";
 import Search from "../ui/Search";
+import Navigation from "./Navigation";
 
 const HeaderContainer = styled.div`
     max-width: 1200px;
@@ -33,6 +34,7 @@ const Header = () => {
                         align-items: center`}>
                     <Link href='/'><Logo>P</Logo></Link>
                     <Search/>
+                    <Navigation/>
                 </div>
                 <div css={css`
                         display: flex;

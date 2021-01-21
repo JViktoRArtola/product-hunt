@@ -18,7 +18,6 @@ const Layout = props => {
                     rel="stylesheet"/>
             </Head>
             <Header />
-            <Navigation/>
             <main>
                 {props.children}
             </main>
