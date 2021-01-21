@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from "next/head";
+import Header from "./Header";
 
 const Layout = props => {
     return (
@@ -15,6 +16,7 @@ const Layout = props => {
                     href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
                     rel="stylesheet"/>
             </Head>
+            <Header />
             <main>
                 {props.children}
             </main>
