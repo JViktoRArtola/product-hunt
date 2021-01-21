@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import {css} from "@emotion/react";
 import Search from "../ui/Search";
 import Navigation from "./Navigation";
+import Button from "../ui/Button";
 
 const HeaderContainer = styled.div`
     max-width: 1200px;
@@ -40,9 +41,9 @@ const Header = () => {
                         display: flex;
                         align-items: center`}>
                     <p css={css`margin-right: 2rem`}>Hola: Victor</p>
-                    <Link href='/'><button bgColor>Log Out</button></Link>
-                    <Link href='/login'><button bgColor>Login</button></Link>
-                    <Link href='/signup'><button>Sign Up</button></Link>
+                    <Link href='/'><Button bgColor>Log Out</Button></Link>
+                    <Link href='/login'><Button bgColor>Login</Button></Link>
+                    <Link href='/signup'><Button>Sign Up</Button></Link>
                 </div>
             </HeaderContainer>
         </header>
