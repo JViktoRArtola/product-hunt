@@ -17,6 +17,7 @@
     "firebase-admin": "^9.4.2",
     "next": "10.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-firebase-file-uploader": "^2.4.4"
   }
 }
