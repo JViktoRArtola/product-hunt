@@ -1,11 +1,31 @@
-import Layout from "../components/layout/Layout";
+import React  from 'react'
+import Layout from '../components/layout/Layout';
+import ProductDetail from '../components/layout/ProductDetail';
+import useProducts from '../hooks/useProducts';
+import styles from '../styles/Index.module.css'
 
-export default function Home() {
+const Home = () => {
+
+    const { products } = useProducts('created');
+
     return (
         <div>
             <Layout>
-                <h1>Hello World !! Home</h1>
+                <div className={styles.productsList}>
+                    <div className={styles.container}>
+                        <ul className={styles.bgWhite}>
+                            {products.map(item => (
+                                <ProductDetail
+                                    key={item.id}
+                                    product={item}
+                                />
+                            ))}
+                        </ul>
+                    </div>
+                </div>
             </Layout>
         </div>
     )
 }
+
+export default Home

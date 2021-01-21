@@ -78,7 +78,7 @@ const Votes = styled.div`
 
 const ProductDetail = ({product}) => {
 
-    const { id, comments, created, description, organzation, name, url, urlImage, votes } = product;
+    const { id, comments, created, description, organization, name, url, urlImage, votes } = product;
 
 
     return (
@@ -95,7 +95,7 @@ const ProductDetail = ({product}) => {
                     <TextDescription>{description}</TextDescription>
                     <Comments>
                         <div>
-                            <img src="/static/img/comentario.png" />
+                            <img src="/static/img/comment.png" />
                             <p>{comments.length} Comments</p>
                         </div>
                     </Comments>
