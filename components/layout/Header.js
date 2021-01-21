@@ -37,6 +37,10 @@ const Header = () => {
                 <div css={css`
                         display: flex;
                         align-items: center`}>
+                    <p css={css`margin-right: 2rem`}>Hola: Victor</p>
+                    <Link href='/'><button bgColor>Log Out</button></Link>
+                    <Link href='/login'><button bgColor>Login</button></Link>
+                    <Link href='/signup'><button>Sign Up</button></Link>
                 </div>
             </HeaderContainer>
         </header>
