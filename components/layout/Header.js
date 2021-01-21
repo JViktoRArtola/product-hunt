@@ -26,6 +26,7 @@ const Logo = styled.p`
 `
 
 const Header = () => {
+    const user = true
     return (
         <header css={css`
                     border-bottom: 2px solid var(--gris3);
@@ -40,10 +41,17 @@ const Header = () => {
                 <div css={css`
                         display: flex;
                         align-items: center`}>
-                    <p css={css`margin-right: 2rem`}>Hola: Victor</p>
-                    <Link href='/'><Button bgColor>Log Out</Button></Link>
-                    <Link href='/login'><Button bgColor>Login</Button></Link>
-                    <Link href='/signup'><Button>Sign Up</Button></Link>
+                    {user ? (
+                        <>
+                            <p css={css`margin-right: 2rem`}>Hola: Victor</p>
+                            <Link href='/'><Button bgColor>Log Out</Button></Link>
+                        </>
+                    ) : (
+                        <>
+                            <Link href='/login'><Button bgColor>Login</Button></Link>
+                            <Link href='/signup'><Button>Sign Up</Button></Link>
+                        </>
+                    )}
                 </div>
             </HeaderContainer>
         </header>
