@@ -35,7 +35,7 @@ export const InputSubmit = styled.input`
     width: 100%;
     padding: 1.5rem;
     text-align: center;
-    // color: #FFF;
+    color: ${props => props.bgColor ? props.bgColor : 'white'};
     font-size: 1.8rem;
     text-transform: uppercase;
     border: none;

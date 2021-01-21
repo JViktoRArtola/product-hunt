@@ -26,7 +26,7 @@ const Logo = styled.p`
 `
 
 const Header = () => {
-    const user = true
+    const user = false
     return (
         <header css={css`
                     border-bottom: 2px solid var(--gris3);
