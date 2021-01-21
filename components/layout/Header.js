@@ -46,7 +46,6 @@ const Header = () => {
                         <>
                             <p css={css`margin-right: 2rem`}>Hola: {user.displayName}</p>
                             <Link href='/'><Button bgColor onClick={()=> firebase.logout()}>Log Out</Button></Link>
-
                         </>
                     ) : (
                         <>
