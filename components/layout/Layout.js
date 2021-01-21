@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from "next/head";
 import Header from "./Header";
+import Navigation from "./Navigation";
 
 const Layout = props => {
     return (
@@ -17,6 +18,7 @@ const Layout = props => {
                     rel="stylesheet"/>
             </Head>
             <Header />
+            <Navigation/>
             <main>
                 {props.children}
             </main>
